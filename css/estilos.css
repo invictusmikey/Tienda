@@ -1,0 +1,23 @@
+.wrapper{
+margin:auto;
+width: 90vw;
+min-height: 100vw;
+background-color: red;
+text-align: center;
+}
+h1{
+text-align: center;
+}
+
+.titulo{
+color:blue;
+
+}
+.card{
+width: 30%;
+display: inline-block;
+}
+
+.car-image{
+width: 100%;
+}
