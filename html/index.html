@@ -18,6 +18,7 @@
         </ul>
     </nav>
 </header>
+<h2 style="color: blue;font-size: larger;">la bebida que elijas tendra el valor de $6.000</h2>
 <body>
     <div class="wrapper">
         <h1 class="titulo">Poductos</h1>
@@ -25,6 +26,39 @@
         <div class="card"><img class="card-image" src="/source/azul.jpg" alt="negro"><input type="number" value="0"><input type="submit" value="compar" onclick="alertacompra()"></div>
         <div class="card"><img class="card-image" src="/source/morado.jpg" alt="negro"><input type="number" value="0"><input type="submit" value="compar" onclick="alertacompra()"></div>
         <div class="card"><img class="card-image" src="/source/blanco.jpg" alt="negro"><input type="number" value="0"><input type="submit" value="compar" onclick="alertacompra()"></div>
+        <div class="carrito">
+            <button onclick="mostrarCarrito()">Mostrar carrito</button>
+    
     </div>
+    </div>
+   
+
+    <script>
+        let carrito = [];
+
+ function alertacompra() {
+    let cantidad = parseInt(event.target.previousElementSibling.value);
+    let producto = event.target.parentElement.querySelector('.card-image').alt;
+
+    if (cantidad > 0) {
+        for (var i = 0; i < cantidad; i++) {
+            carrito.push(producto);
+        }
+        alert('¡Felicidades! Has agregado ' + cantidad + ' producto(s) al carrito.');
+    } else {
+        alert('Por favor, ingresa una cantidad válida.');
+    }
+}
+function mostrarCarrito() {
+    console.log('Contenido del carrito:');
+    alert("se encuentra en la consola del navegador");
+    console.log(carrito);
+}
+
+
+    </script>
+    
+ 
+
 </body>
 </html>
