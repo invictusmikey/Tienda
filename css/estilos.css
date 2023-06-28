@@ -2,7 +2,8 @@
 margin:auto;
 width: 90vw;
 min-height: 100vw;
-background-color: red;
+background-color: black;
+background-image: url(/source/fondo.jpg);
 text-align: center;
 }
 h1{
