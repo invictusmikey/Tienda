@@ -1,3 +1,6 @@
+body{
+    background-color: black;
+}
 .wrapper{
 margin:auto;
 width: 90vw;
@@ -11,7 +14,10 @@ text-align: center;
 }
 
 .titulo{
+
+padding-left: 150px;
 color:blue;
+text-align: left;
 
 }
 .card{
@@ -21,4 +27,28 @@ display: inline-block;
 
 .car-image{
 width: 100%;
+}
+header{
+border:double;
+border-color: blueviolet;
+text-align: center;
+height: 40px;
+background-color: black;
+
+}
+li{
+position: relative;
+display: inline-block;
+bottom: 10px;
+}
+
+a{
+font-size: larger;
+border-radius: 10px;
+display: inline-block;
+text-decoration: none;
+border: solid;
+background-color: orangered;
+
+
 }
